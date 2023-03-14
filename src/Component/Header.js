@@ -8,7 +8,7 @@ const Header = () =>{
             <header>
             <header>
                 <div id="brand">
-                    Tushar Funnel
+                    Tushar Funnel &nbsp; <Link to='/' className='btn btn-info'>Home</Link>
                 </div>
                 <div id="social">
                     <Link to="/" className="btn btn-success">

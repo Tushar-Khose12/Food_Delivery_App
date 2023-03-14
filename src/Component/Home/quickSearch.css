@@ -1,3 +1,4 @@
+
 #quickSearch{
     width:80%;
     margin-left: 10%;
@@ -12,7 +13,7 @@
 
 #QuickSubHeader{
     font-size: 20px;
-    color:gray;
+    color:black;
     line-height: 2;
     margin-left:2%;
 }
@@ -41,10 +42,11 @@
     margin-left:2%
 }
 .componentHeading1{
+    font-weight: bold;
     font-size: 25px;
     color:#3b2632;
 }
 .componentHeading2{
     font-size: 20px;
-    color:gray;
+    color:black;
 }
