@@ -3,7 +3,8 @@ import axios from "axios";
 import './listing.css';
 import ListingDisplay from "./ListingDisplay"
 
-const base_url = "http://3.17.216.66:4000";
+
+const base_url = "http://3.17.216.66:4000"
 
 class Listing extends Component {
     constructor(){

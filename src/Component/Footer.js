@@ -6,7 +6,7 @@ const Footer = () =>{
         <>
               <footer>
             <hr/>
-            <h2>&copy; Developer Funnel</h2>
+            <h2>&copy; Tushar Funnel</h2>
             <div className="footDiv">
                 <ul>
                     <li>Contact Us</li>
