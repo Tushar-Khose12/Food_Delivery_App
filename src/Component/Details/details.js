@@ -14,10 +14,15 @@ class Details extends Component{
         this.state={
             details:'',
            mealId:sessionStorage.getItem('mealId')?sessionStorage.getItem('mealId'):1,
-           menuList:''
+           menuList:'',
+           userItem:''
         }
     }
     proceed = () => {}
+
+    addToCart = (data) =>{
+        this.setState({userItem:data})
+    }
     render(){
         // let details = this.state.details or
         let {details} = this.state;
@@ -70,7 +75,9 @@ class Details extends Component{
                     </button>
                     <div className='col-md-12'>
                         <center><h2>Menu</h2></center>
-                        <MenuDisplay menuData={this.state.menuList}/>
+                        <MenuDisplay menuData={this.state.menuList}
+                            finalOrder={(data)=>{this.addToCart(data)}}
+                        />
                     </div>
                 </div>
            </>

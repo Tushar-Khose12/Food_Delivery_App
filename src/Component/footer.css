@@ -1,5 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 footer{
+    font-family: 'PT Serif', serif;
     height: 140px;
     margin-top:2%;
     background-color:#3b2632;
