@@ -1,0 +1,24 @@
+{
+  "orders": [
+    {
+      "id": 9760,
+      "hotel_name": "Burger King",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "cost": 239,
+      "phone": 987654321,
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "51,53,55"
+    },
+    {
+      "id": 1785,
+      "hotel_name": "Cafe Wink",
+      "name": "Tushar",
+      "email": "tk@gmail.com",
+      "cost": 685,
+      "phone": 987654321,
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "57,58,59"
+    }
+  ]
+}
