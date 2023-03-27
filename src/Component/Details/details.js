@@ -18,7 +18,10 @@ class Details extends Component{
            userItem:''
         }
     }
-    proceed = () => {}
+    proceed = () => {
+        sessionStorage.setItem('menu',this.state.userItem)
+        this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
+    }
 
     addToCart = (data) =>{
         this.setState({userItem:data})
