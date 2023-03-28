@@ -19,6 +19,26 @@
       "phone": 987654321,
       "address": "U Block Hno 43 Gurgaon",
       "menuItem": "57,58,59"
+    },
+    {
+      "id": 6949,
+      "hotel_name": "Captain Sam's",
+      "name": "Tushar",
+      "email": "tushar@gmail.com",
+      "cost": 308,
+      "phone": 987654321,
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "27,28"
+    },
+    {
+      "id": 4038,
+      "hotel_name": "Burger King",
+      "name": "Tushar",
+      "email": "tushar@gmail.com",
+      "cost": 169,
+      "phone": 987654321,
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "52"
     }
   ]
 }
