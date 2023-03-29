@@ -1,18 +1,22 @@
-import React,{Component} from 'react';
+import React,{useState,useEffect} from 'react';
 import './search.css';
 
 const base_url = "http://3.17.216.66:4000";
-class Search extends Component {
-    constructor(){
-        super()
-        console.log("Inside constructor");
-        this.state={
-            location:'',
-            restData:''
-        }
-    }
-    renderCity = (data) => {
-        console.log(">>>>renderCity",data)
+
+function Search(){
+    const [location,setLocation] = useState();
+    const[restData,setrestData] = useState();
+    
+    useEffect(()=>{
+        fetch(`${base_url}/location`,{method:'GET'})
+        //return the promise
+        .then((response)=>response.json())
+        // return the promise
+        .then((data)=>{
+         setLocation(data);
+        })
+    },[])
+   const renderCity = (data) => {
         if(data){
             return data.map((item) => {
                 return(
@@ -24,7 +28,7 @@ class Search extends Component {
         }
     }
 
-    renderRest = (data) => {
+    const renderRest = (data) => {
         if(data){
             return data.map((item) => {
                 return(
@@ -36,16 +40,16 @@ class Search extends Component {
         }
     }
 
-    handleCity = (event) => {
+    const handleCity = (event) => {
         let stateId = event.target.value;
         fetch(`${base_url}/restaurant?stateId=${stateId}`,{method:'GET'})
         .then((res) =>  res.json())
         .then((data) => {
-            this.setState({restData:data})
+           setrestData(data);
         })
     }
-    render(){
-        console.log("Inside render");
+
+
         return(
             <>
                <div id="search">
@@ -56,33 +60,22 @@ class Search extends Component {
                         Search Place Near To You
                     </div>
                     <div id="dropdown">
-                        <select onChange={this.handleCity}>
+                        <select onChange={handleCity}>
                             <option>
                                 ---Select Your City---
                             </option>
-                            {this.renderCity(this.state.location)}
+                            {renderCity(location)}
                         </select>
                         <select className="restSelect">
                             <option>
                                 ---Select Restaurants---
                             </option>
-                            {this.renderRest(this.state.restData)}
+                            {renderRest(restData)}
                         </select>
                     </div>
                 </div>
             </>
         )
-    }
-    // api calling on page load
-    componentDidMount(){
-        console.log("Inside componentDidMount");
-        fetch(`${base_url}/location`,{method:'GET'})
-        //return the promise
-        .then((response)=>response.json())
-        // return the promise
-        .then((data)=>{
-          this.setState({location:data})
-        })
-    }
+    
 }
 export default Search;

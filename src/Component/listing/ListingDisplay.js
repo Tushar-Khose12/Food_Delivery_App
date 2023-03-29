@@ -46,7 +46,7 @@ const ListingDisplay = (props) =>{
             }else{
                 return(
                     <div>
-                        <h2>No Data Found for Filter </h2>
+                        <h2>No Food found of your Choice</h2>
                     </div>
                 )
             }
