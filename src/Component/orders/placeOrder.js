@@ -38,7 +38,9 @@ class PlaceOrder extends Component{
         },
         body:JSON.stringify(obj)
        })
-       .then(this.props.history.push('/viewBooking'))
+    //    .then(this.props.history.push('/viewBooking'))
+    .then(console.log('Order Placed'));
+
     }
 
     renderItem = (data) => {
@@ -64,6 +66,7 @@ class PlaceOrder extends Component{
                                     <h3>Your Order for Restaurant {this.state.hotel_name}</h3>
                                 </div>
                                 <div className='panel-body'>
+                                <form action='http://localhost:4100/paynow' method='POST' >
                                     <div className='row'>
                                         <input type='hidden' name='cost' value={this.state.cost}/>
                                         <input type='hidden' name='id' value={this.state.cost}/>
@@ -90,8 +93,9 @@ class PlaceOrder extends Component{
                                             <h2>Total Price is Rs.{this.state.cost}</h2>
                                             </div>
                                         </div>
-                                        <button className='btn btn-success' onClick={this.placeOrder}>Checkout</button>
+                                        <button type='submit' className='btn btn-success' onClick={this.placeOrder}>Checkout</button>
                                     </div>
+                                    </form>
                                 </div>
                        
                         </div>

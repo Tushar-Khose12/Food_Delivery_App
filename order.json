@@ -39,6 +39,46 @@
       "phone": 987654321,
       "address": "U Block Hno 43 Gurgaon",
       "menuItem": "52"
+    },
+    {
+      "id": 7964,
+      "hotel_name": "Cafe Wink",
+      "name": "Rohini",
+      "email": "rohini@gmail.com",
+      "cost": 690,
+      "phone": "9876543212",
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "60,59"
+    },
+    {
+      "id": 4808,
+      "hotel_name": "Street Foods By Punjab Grill",
+      "name": "Rohini",
+      "email": "rohini@gmail.com",
+      "cost": 318,
+      "phone": "9876543212",
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "36,39,36,36"
+    },
+    {
+      "id": 3169,
+      "hotel_name": "MEALFUL WRAPS - Meals In A Wrap",
+      "name": "Rohini",
+      "email": "rohini@gmail.com",
+      "cost": 408,
+      "phone": "9876543212",
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "49,46"
+    },
+    {
+      "id": 164,
+      "hotel_name": "MEALFUL WRAPS - Meals In A Wrap",
+      "name": "Rohini",
+      "email": "rohini@gmail.com",
+      "cost": 408,
+      "phone": "9876543212",
+      "address": "U Block Hno 43 Gurgaon",
+      "menuItem": "49,46"
     }
   ]
 }
